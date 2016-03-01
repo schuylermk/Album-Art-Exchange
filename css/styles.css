@@ -1,3 +1,39 @@
+header input, header button {
+  padding: 8px; }
 
+body {
+  background: black;
+  color: white;
+  font-family: 'Helvetica Neue';
+  box-sizing: border-box;
+  margin: 0; }
+
+header {
+  text-align: center; }
+  header h1 {
+    margin: 15px 0; }
+  header .red {
+    color: #C91423; }
+  header input, header button {
+    border: none;
+    font-size: .8em; }
+  header button {
+    border-radius: 0 3px 3px 0;
+    margin-left: -5px;
+    background: #C91423;
+    color: white; }
+  header input {
+    border-radius: 3px 0 0 3px;
+    text-align: center; }
+  header nav {
+    display: flex;
+    align-items: center;
+    justify-content: center; }
+    header nav a {
+      margin: 0 10px 10px;
+      color: white;
+      text-decoration: none; }
+      header nav a:hover {
+        color: #C91423; }
 
 /*# sourceMappingURL=styles.css.map */

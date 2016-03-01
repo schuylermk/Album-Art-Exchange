@@ -1,0 +1,48 @@
+@import 'colors';
+@import 'extends';
+
+body {
+  background: black;
+  color: white;
+  font-family: 'Helvetica Neue';
+  box-sizing: border-box;
+  margin: 0;
+}
+
+header {
+  text-align: center;
+  h1 {
+    margin: 15px 0;
+  }
+  .red {
+    color: $color-prim;
+  }
+  input, button {
+    @extend %padding;
+    border: none;
+    font-size: .8em;
+  }
+  button {
+    border-radius: 0 3px 3px 0;
+    margin-left: -5px;
+    background: $color-prim;
+    color: white;
+  }
+  input {
+    border-radius: 3px 0 0 3px;
+    text-align: center;
+  }
+  nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    a {
+      margin: 0 10px 10px;
+      color: white;
+      text-decoration: none;
+      &:hover {
+        color: $color-prim;
+      }
+    }
+  }
+}
