@@ -49,21 +49,23 @@ header {
 
 main {
   display: flex;
-  flex-direction: column;
   justify-content: center;
-  align-items: center;
-  flex-grow: 1;
+  margin-top: 50px;
   .gallery {
     display: flex;
+    flex-direction: column;
+    align-content: space-around;
+    width: 90vw;
+    height: 90vw;
     flex-wrap: wrap;
-    width: 100vw;
     img {
-      width: 100px;
-      height: 100px;
-      margin: 10px;
+      width: calc(33.33% - 20px);
+      height: calc(33.33% - 20px);
+      margin: 5px;
     }
   }
 }
-.search {
 
+.search {
+  text-align: center;
 }

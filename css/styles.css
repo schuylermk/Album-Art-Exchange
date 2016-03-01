@@ -38,17 +38,21 @@ header {
 
 main {
   display: flex;
-  flex-direction: column;
   justify-content: center;
-  align-items: center;
-  flex-grow: 1; }
+  margin-top: 50px; }
   main .gallery {
     display: flex;
-    flex-wrap: wrap;
-    width: 100vw; }
+    flex-direction: column;
+    align-content: space-around;
+    width: 90vw;
+    height: 90vw;
+    flex-wrap: wrap; }
     main .gallery img {
-      width: 100px;
-      height: 100px;
-      margin: 10px; }
+      width: calc(33.33% - 20px);
+      height: calc(33.33% - 20px);
+      margin: 5px; }
+
+.search {
+  text-align: center; }
 
 /*# sourceMappingURL=styles.css.map */
