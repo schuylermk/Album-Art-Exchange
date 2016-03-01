@@ -11,8 +11,8 @@ body {
 
 .container {
   width: 100%;
-  @media screen and (min-width: 900px) {
-    width: 900px;
+  @media screen and (min-width: 800px) {
+    width: 800px;
     height: 100%;
     margin: 0 auto;
   }
@@ -36,22 +36,38 @@ input {
 
 header {
   text-align: center;
+  margin: 0 auto;
+  @media screen and (min-width: 800px) {
+    display: flex;
+    width: 710px;
+    justify-content: space-between;
+  }
   h1 {
-    margin: 15px 0;
+    margin: 15px auto;
+    width: 155px;
+    @media screen and (min-width: 800px) {
+      margin: 15px 0;
+    }
+
   }
   .red {
     color: $color-prim;
   }
-  nav {
+  .nav-spread {
     display: flex;
-    align-items: center;
-    justify-content: center;
-    a {
-      margin: 0 10px 20px;
-      color: white;
-      text-decoration: none;
-      &:hover {
-        color: $color-prim;
+    flex-direction: column;
+
+    nav {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      a {
+        margin: 0 10px 20px;
+        color: white;
+        text-decoration: none;
+        &:hover {
+          color: $color-prim;
+        }
       }
     }
   }
@@ -68,17 +84,17 @@ main {
     width: 90vw;
     height: 90vw;
     flex-wrap: wrap;
-    @media screen and (min-width: 900px) {
-      width: 810px;
-      height: 810px;
+    @media screen and (min-width: 800px) {
+      width: 720px;
+      height: 720px;
     }
     img {
       width: calc(33.33% - 20px);
       height: calc(33.33% - 20px);
       margin: 10px;
-      @media screen and (min-width: 900px) {
-        width: 250px;
-        height: 250px;
+      @media screen and (min-width: 800px) {
+        width: 220px;
+        height: 220px;
       }
     }
   }
@@ -96,7 +112,7 @@ main {
   p {
     width: 60vw;
     color: #777;
-    @media screen and (min-width: 900px) {
+    @media screen and (min-width: 800px) {
       width: 500px;
     }
   }

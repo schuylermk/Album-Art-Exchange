@@ -10,9 +10,9 @@ body {
 
 .container {
   width: 100%; }
-  @media screen and (min-width: 900px) {
+  @media screen and (min-width: 800px) {
     .container {
-      width: 900px;
+      width: 800px;
       height: 100%;
       margin: 0 auto; } }
 
@@ -32,21 +32,34 @@ input {
   text-align: center; }
 
 header {
-  text-align: center; }
+  text-align: center;
+  margin: 0 auto; }
+  @media screen and (min-width: 800px) {
+    header {
+      display: flex;
+      width: 710px;
+      justify-content: space-between; } }
   header h1 {
-    margin: 15px 0; }
+    margin: 15px auto;
+    width: 155px; }
+    @media screen and (min-width: 800px) {
+      header h1 {
+        margin: 15px 0; } }
   header .red {
     color: #C91423; }
-  header nav {
+  header .nav-spread {
     display: flex;
-    align-items: center;
-    justify-content: center; }
-    header nav a {
-      margin: 0 10px 20px;
-      color: white;
-      text-decoration: none; }
-      header nav a:hover {
-        color: #C91423; }
+    flex-direction: column; }
+    header .nav-spread nav {
+      display: flex;
+      align-items: center;
+      justify-content: center; }
+      header .nav-spread nav a {
+        margin: 0 10px 20px;
+        color: white;
+        text-decoration: none; }
+        header .nav-spread nav a:hover {
+          color: #C91423; }
 
 main {
   display: flex;
@@ -59,18 +72,18 @@ main {
     width: 90vw;
     height: 90vw;
     flex-wrap: wrap; }
-    @media screen and (min-width: 900px) {
+    @media screen and (min-width: 800px) {
       main .gallery {
-        width: 810px;
-        height: 810px; } }
+        width: 720px;
+        height: 720px; } }
     main .gallery img {
       width: calc(33.33% - 20px);
       height: calc(33.33% - 20px);
       margin: 10px; }
-      @media screen and (min-width: 900px) {
+      @media screen and (min-width: 800px) {
         main .gallery img {
-          width: 250px;
-          height: 250px; } }
+          width: 220px;
+          height: 220px; } }
 
 .search {
   text-align: center;
@@ -83,7 +96,7 @@ main {
   .about p {
     width: 60vw;
     color: #777; }
-    @media screen and (min-width: 900px) {
+    @media screen and (min-width: 800px) {
       .about p {
         width: 500px; } }
 
