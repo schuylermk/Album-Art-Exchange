@@ -67,4 +67,11 @@ main {
     width: 60vw;
     color: #777; }
 
+footer {
+  text-align: center; }
+  footer i {
+    margin: 30px 15px; }
+    footer i:hover {
+      color: #C91423; }
+
 /*# sourceMappingURL=styles.css.map */

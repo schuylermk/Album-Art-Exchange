@@ -81,3 +81,13 @@ main {
     color: #777;
   }
 }
+
+footer {
+  text-align: center;
+  i {
+    margin: 30px 15px;
+    &:hover {
+      color: $color-prim;
+    }
+  }
+}
