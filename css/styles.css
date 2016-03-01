@@ -1,4 +1,4 @@
-header input, header button {
+input, button {
   padding: 8px; }
 
 body {
@@ -8,23 +8,27 @@ body {
   box-sizing: border-box;
   margin: 0; }
 
+input, button {
+  border: none;
+  font-size: .8em;
+  outline: none; }
+
+button {
+  border-radius: 0 3px 3px 0;
+  margin-left: -5px;
+  background: #C91423;
+  color: white; }
+
+input {
+  border-radius: 3px 0 0 3px;
+  text-align: center; }
+
 header {
   text-align: center; }
   header h1 {
     margin: 15px 0; }
   header .red {
     color: #C91423; }
-  header input, header button {
-    border: none;
-    font-size: .8em; }
-  header button {
-    border-radius: 0 3px 3px 0;
-    margin-left: -5px;
-    background: #C91423;
-    color: white; }
-  header input {
-    border-radius: 3px 0 0 3px;
-    text-align: center; }
   header nav {
     display: flex;
     align-items: center;
@@ -54,5 +58,13 @@ main {
 
 .search {
   text-align: center; }
+
+.about {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center; }
+  .about p {
+    width: 60vw;
+    color: #777; }
 
 /*# sourceMappingURL=styles.css.map */

@@ -9,6 +9,23 @@ body {
   margin: 0;
 }
 
+input, button {
+  @extend %padding;
+  border: none;
+  font-size: .8em;
+  outline: none;
+}
+button {
+  border-radius: 0 3px 3px 0;
+  margin-left: -5px;
+  background: $color-prim;
+  color: white;
+}
+input {
+  border-radius: 3px 0 0 3px;
+  text-align: center;
+}
+
 header {
   text-align: center;
   h1 {
@@ -16,21 +33,6 @@ header {
   }
   .red {
     color: $color-prim;
-  }
-  input, button {
-    @extend %padding;
-    border: none;
-    font-size: .8em;
-  }
-  button {
-    border-radius: 0 3px 3px 0;
-    margin-left: -5px;
-    background: $color-prim;
-    color: white;
-  }
-  input {
-    border-radius: 3px 0 0 3px;
-    text-align: center;
   }
   nav {
     display: flex;
@@ -68,4 +70,14 @@ main {
 
 .search {
   text-align: center;
+}
+
+.about {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  p {
+    width: 60vw;
+    color: #777;
+  }
 }
