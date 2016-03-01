@@ -54,13 +54,14 @@ main {
     main .gallery img {
       width: calc(33.33% - 20px);
       height: calc(33.33% - 20px);
-      margin: 5px; }
+      margin: 10px; }
 
 .search {
-  text-align: center; }
+  text-align: center;
+  margin-top: 20px; }
 
 .about {
-  margin-top: 20px;
+  margin-top: 50px;
   display: flex;
   justify-content: center; }
   .about p {
