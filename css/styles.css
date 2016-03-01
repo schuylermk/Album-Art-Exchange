@@ -8,6 +8,14 @@ body {
   box-sizing: border-box;
   margin: 0; }
 
+.container {
+  width: 100%; }
+  @media screen and (min-width: 900px) {
+    .container {
+      width: 900px;
+      height: 100%;
+      margin: 0 auto; } }
+
 input, button {
   border: none;
   font-size: .8em;
@@ -51,10 +59,18 @@ main {
     width: 90vw;
     height: 90vw;
     flex-wrap: wrap; }
+    @media screen and (min-width: 900px) {
+      main .gallery {
+        width: 810px;
+        height: 810px; } }
     main .gallery img {
       width: calc(33.33% - 20px);
       height: calc(33.33% - 20px);
       margin: 10px; }
+      @media screen and (min-width: 900px) {
+        main .gallery img {
+          width: 250px;
+          height: 250px; } }
 
 .search {
   text-align: center;
@@ -67,6 +83,9 @@ main {
   .about p {
     width: 60vw;
     color: #777; }
+    @media screen and (min-width: 900px) {
+      .about p {
+        width: 500px; } }
 
 footer {
   text-align: center; }

@@ -9,6 +9,14 @@ body {
   margin: 0;
 }
 
+.container {
+  width: 100%;
+  @media screen and (min-width: 900px) {
+    width: 900px;
+    height: 100%;
+    margin: 0 auto;
+  }
+}
 input, button {
   @extend %padding;
   border: none;
@@ -60,10 +68,18 @@ main {
     width: 90vw;
     height: 90vw;
     flex-wrap: wrap;
+    @media screen and (min-width: 900px) {
+      width: 810px;
+      height: 810px;
+    }
     img {
       width: calc(33.33% - 20px);
       height: calc(33.33% - 20px);
       margin: 10px;
+      @media screen and (min-width: 900px) {
+        width: 250px;
+        height: 250px;
+      }
     }
   }
 }
@@ -80,6 +96,9 @@ main {
   p {
     width: 60vw;
     color: #777;
+    @media screen and (min-width: 900px) {
+      width: 500px;
+    }
   }
 }
 
