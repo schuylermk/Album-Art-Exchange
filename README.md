@@ -1,16 +1,20 @@
-## Dribbble
+## album.art.exchange
 
-**Epicodus CSS week 4**
+**Epicodus CSS**
 
 By **Oskar Radon and Schuyler Klaassen**
 
 #### Description
 
-Code along with DevTips [Dribbble video](https://www.youtube.com/watch?v=H1lREysgdgc).
+Simple Flexbox practice project as a hypothetical upgrade to the existing [Album Art Exchange] (http://www.albumartexchange.com/) site.
 
 #### Technologies Used
 
 Sass, CSS, HTML
+
+#### Instructions
+
+Clone the repository, open in your code editor of choice, and drag the index.html into your browser.git 
 
 #### License
 
